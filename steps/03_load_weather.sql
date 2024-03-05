@@ -1,17 +1,5 @@
-/*-----------------------------------------------------------------------------
-Hands-On Lab: Data Engineering with Snowpark
-Script:       03_load_weather.sql
-Author:       Jeremiah Hansen
-Last Updated: 1/9/2023
------------------------------------------------------------------------------*/
-
--- SNOWFLAKE ADVANTAGE: Data sharing/marketplace (instead of ETL)
--- SNOWFLAKE ADVANTAGE: Visual Studio Code Snowflake native extension (PrPr, Git integration)
-
-
 USE ROLE HOL_ROLE;
 USE WAREHOUSE HOL_WH;
-
 
 -- ----------------------------------------------------------------------------
 -- Step #1: Connect to weather data in Marketplace
@@ -39,7 +27,7 @@ Weather Source in the Snowflake Data Marketplace by following these steps:
                      -> Under "Options", adjust the Database name to read "FROSTBYTE_WEATHERSOURCE" (all capital letters)
                         -> Grant to "HOL_ROLE"
     
-That's it... we don't have to do anything from here to keep this data updated.
+we don't have to do anything from here to keep this data updated.
 The provider will do that for us and data sharing means we are always seeing
 whatever they they have published.
 
@@ -56,5 +44,6 @@ GRANT IMPORTED PRIVILEGES ON DATABASE FROSTBYTE_WEATHERSOURCE TO ROLE HOL_ROLE;
 ---*/
 
 
--- Let's look at the data - same 3-part naming convention as any other table
+
+
 SELECT * FROM FROSTBYTE_WEATHERSOURCE.ONPOINT_ID.POSTAL_CODES LIMIT 100;

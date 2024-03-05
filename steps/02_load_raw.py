@@ -1,10 +1,3 @@
-#------------------------------------------------------------------------------
-# Hands-On Lab: Data Engineering with Snowpark
-# Script:       02_load_raw.py
-# Author:       Jeremiah Hansen, Caleb Baechtold
-# Last Updated: 1/9/2023
-#------------------------------------------------------------------------------
-
 import time
 from snowflake.snowpark import Session
 #import snowflake.snowpark.types as T

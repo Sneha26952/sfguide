@@ -1,10 +1,3 @@
-#------------------------------------------------------------------------------
-# Hands-On Lab: Data Engineering with Snowpark
-# Script:       06_orders_process_sp/app.py
-# Author:       Jeremiah Hansen, Caleb Baechtold
-# Last Updated: 1/9/2023
-#------------------------------------------------------------------------------
-
 # SNOWFLAKE ADVANTAGE: Python Stored Procedures
 
 import time
@@ -55,7 +48,6 @@ def main(session: Session) -> str:
 
 
 # For local debugging
-# Be aware you may need to type-convert arguments if you add input parameters
 if __name__ == '__main__':
     # Add the utils package to our path and import the snowpark_utils function
     import os, sys
@@ -67,8 +59,8 @@ if __name__ == '__main__':
     session = snowpark_utils.get_snowpark_session()
 
     if len(sys.argv) > 1:
-        print(main(session, *sys.argv[1:]))  # type: ignore
+        print(main(session, *sys.argv[1:]))  
     else:
-        print(main(session))  # type: ignore
+        print(main(session)) 
 
     session.close()

@@ -1,10 +1,3 @@
-/*-----------------------------------------------------------------------------
-Hands-On Lab: Data Engineering with Snowpark
-Script:       08_orchestrate_jobs.sql
-Author:       Jeremiah Hansen
-Last Updated: 1/9/2023
------------------------------------------------------------------------------*/
-
 -- SNOWFLAKE ADVANTAGE: Tasks (with Stream triggers)
 -- SNOWFLAKE ADVANTAGE: Task Observability
 
