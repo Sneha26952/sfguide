@@ -8,9 +8,7 @@ POS_TABLES = ['country', 'franchise', 'location', 'menu', 'truck', 'order_header
 CUSTOMER_TABLES = ['customer_loyalty']
 TABLE_DICT = {
     "pos": {"schema": "RAW_POS", "tables": POS_TABLES},
-    "customer": {"schema": "RAW_CUSTOMER", "tables": CUSTOMER_TABLES}
-}
-
+    "customer": {"schema": "RAW_CUSTOMER", "tables": CUSTOMER_TABLES}}
 # SNOWFLAKE ADVANTAGE: Schema detection
 # SNOWFLAKE ADVANTAGE: Data ingestion with COPY
 # SNOWFLAKE ADVANTAGE: Snowflake Tables (not file-based)

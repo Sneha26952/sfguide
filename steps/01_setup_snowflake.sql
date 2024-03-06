@@ -1,13 +1,3 @@
--- ----------------------------------------------------------------------------
--- Step #1: Accept Anaconda Terms & Conditions
--- ----------------------------------------------------------------------------
-
--- See Getting Started section in Third-Party Packages (https://docs.snowflake.com/en/developer-guide/udf/python/udf-python-packages.html#getting-started)
-
-
--- ----------------------------------------------------------------------------
--- Step #2: Create the account level objects
--- ----------------------------------------------------------------------------
 USE ROLE ACCOUNTADMIN;
 
 -- Roles
@@ -49,6 +39,9 @@ CREATE OR REPLACE FILE FORMAT PARQUET_FORMAT
     TYPE = PARQUET
     COMPRESSION = SNAPPY
 ;
+
+--#size of compression in parquet and normal csv file 
+--#size 
 CREATE OR REPLACE STAGE FROSTBYTE_RAW_STAGE
     URL = 's3://sfquickstarts/data-engineering-with-snowpark-python/'
 ;
